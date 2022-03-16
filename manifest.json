@@ -1,0 +1,25 @@
+{
+    "name": "Thats a mood",
+    "description": "Mood Music Extension",
+    "version": "1.2",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "assets/images/moodico16.png",
+        "32": "assets/images/moodico32.png",
+        "48": "assets/images/moodico48.png",
+        "128": "assets/images/moodico128.png"
+    }
+    },
+    "icons": {
+        "16": "assets/images/moodico16.png",
+        "32": "assets/images/moodico32.png",
+        "48": "assets/images/moodico48.png",
+        "128": "assets/images/moodico128.png"
+    }    
+}
