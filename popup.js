@@ -39,6 +39,18 @@ muteAction.addEventListener('click', (e) => {
   }
 });
 
+// PERSISTENT FUNCTIONALITY
+// const persistence = document.querySelector('#persistence');
+// persistence.addEventListener('click', (e) => {
+//   const sending = chrome.runtime.sendMessage({
+//     fireVolume: fireSong.volume,
+//     rainVolume: rainSong.volume,
+//     coffeeVolume: coffeeSong.volume
+// })
+// });
+
+
+
 const randomAction = document.querySelector('#shuffle-btn');
 randomAction.addEventListener('click', (e) => {
   fireVol.value = Math.floor(Math.random() * 100);
@@ -74,5 +86,19 @@ function backgroundChange() {
 
   document.body.appendChild(sheet);
 }
+
+let homeicon = document.querySelector('#mood')
+homeicon.addEventListener('mousedown', () => {
+  homeicon.classList.add('rotate');
+  console.log('mousedown test')
+})
+
+homeicon.addEventListener('mouseup', () => {
+  console.log('mouseup test');
+  console.log(homeicon.classList);
+  homeicon.classList.remove('rotate');
+  console.log(homeicon.classList);
+  
+})
 
 // let playNow = document.querySelector('audio').play();
