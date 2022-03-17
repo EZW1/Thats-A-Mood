@@ -1,8 +1,11 @@
 // 
 // document.addEventListener('DOMContentLoaded', () => {
-chrome.runtime.onInstalled.addListener(() => {
+
   console.log ('background is running')
-  
+
+  //   let document = popup.html;
+  // const offscreen = new OffscreenCanvas(256, 256);
+
   const fireAudio = document.createElement("audio");
   fireAudio.setAttribute('src', 'assets/sounds/fire.ogg')
   fireAudio.setAttribute('id', 'fire-ogg')
@@ -31,4 +34,3 @@ chrome.runtime.onInstalled.addListener(() => {
   coffeeAudio.play();
   
   console.log('end of background');
-});

@@ -3,7 +3,10 @@
   <head>
     <link rel="stylesheet" href="button.css">
   </head>
-  <body>
+  <body id="bod">
+    <div id="title">
+      <h1>That's a mood.</h1>
+    </div>
     <div id="top" class="row">
       <div id="left" class="col">
         <img src="assets/images/fire.png" alt="fire" class ="icons">
@@ -34,10 +37,11 @@
       </div>
     </div>
     <div id="bottom" class="row">
-      <button id="mute">Silence</button>
-      <button id="random">Randomize</button>
-      <img id="mood" src="assets/images/moodico32.png" alt="mood icon">
+      <img id="mute-btn" src="assets/images/mute.png" alt="mute button" class ="btn">
+      <img id="shuffle-btn" src="assets/images/shuffle.png" alt="random button" class ="btn">
+      <img id="mood" src="assets/images/moodico32.png" alt="mood icon" class ="btn">
     </div>
     <script src="popup.js"></script>
+    <!-- <script src="background.js"></script> -->
   </body>
 </html>
