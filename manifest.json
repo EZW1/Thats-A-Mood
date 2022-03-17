@@ -4,9 +4,9 @@
     "version": "1.2",
     "manifest_version": 3,
     "background": {
-      "service_worker": "background.js"
+    "service_worker": "background.js"
     },
-    "permissions": ["storage"],
+    "permissions": ["background"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {

@@ -1,13 +1,25 @@
-button {
-  height: 30px;
-  width: 30px;
-  outline: none;
-  margin: 10px;
-  border: none;
-  border-radius: 2px;
+body {
+  background-color: lightblue;
 }
 
-button.current {
-  box-shadow: 0 0 0 2px white,
-              0 0 0 4px black;
+#top,
+#bottom {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  width: 50%;
+  margin: auto;
+}
+
+
+
+#mood-icon {
+  
 }

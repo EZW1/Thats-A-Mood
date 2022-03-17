@@ -4,7 +4,40 @@
     <link rel="stylesheet" href="button.css">
   </head>
   <body>
-    <button id="changeColor"></button>
+    <div id="top" class="row">
+      <div id="left" class="col">
+        <img src="assets/images/fire.png" alt="fire" class ="icons">
+        <input type="range" min="0" max="100" value="0" class="slider" id="fire-vol">
+        <div id="firesoundplayer">
+          <audio id="fire-ogg" preload="auto" autoplay="autoplay" loop>
+            <source  src="assets/sounds/fire.ogg" type="audio/ogg">
+          </audio>
+        </div>
+      </div>
+      <div id="middle" class="col">
+        <img src="assets/images/rainy.png" alt="rain" class ="icons">
+        <input type="range" min="0" max="100" value="0" class="slider" id="rain-vol">
+        <div id="rainsoundplayer">
+          <audio id="rain-ogg" preload="auto" autoplay="autoplay" loop>
+            <source  src="assets/sounds/rain.ogg" type="audio/ogg">
+          </audio>
+        </div>
+      </div>    
+      <div id="right" class="col">
+        <img src="assets/images/coffee.png" alt="coffee" class ="icons">
+        <input type="range" min="0" max="100" value="0" class="slider" id="coffee-vol">
+        <div id="coffeesoundplayer">
+          <audio id="coffee-ogg" preload="auto" autoplay="autoplay" loop>
+            <source  src="assets/sounds/people.ogg" type="audio/ogg">
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div id="bottom" class="row">
+      <button id="mute">Silence</button>
+      <button id="random">Randomize</button>
+      <img id="mood" src="assets/images/moodico32.png" alt="mood icon">
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>
