@@ -87,10 +87,17 @@ function backgroundChange() {
   document.body.appendChild(sheet);
 }
 
+let clickCount = 0;
+
 let homeicon = document.querySelector('#mood')
 homeicon.addEventListener('mousedown', () => {
   homeicon.classList.add('rotate');
   console.log('mousedown test')
+  clickCount++;
+  if (clickCount > 20) {
+    const title = document.getElementById('title');
+    title.innerText = "That's a big mood."
+  }
 })
 
 homeicon.addEventListener('mouseup', () => {
